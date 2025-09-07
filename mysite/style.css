@@ -1,19 +1,32 @@
+/* Base Styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #fff5f0; /* warm light background */
+  color: #4a2e2a; /* deep warm brown */
   line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
 }
 
+/* Header */
 header {
-  background: #4a90e2;
-  color: #fff;
+  background-color: #ff8c42; /* warm orange */
+  color: #fffaf0; /* light cream */
   padding: 2rem;
   text-align: center;
 }
 
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Main Sections */
 main {
   max-width: 800px;
   margin: 2rem auto;
@@ -22,10 +35,67 @@ main {
 
 section {
   margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #ffd8a9; /* soft warm yellow */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+section h2 {
+  margin-top: 0;
+  color: #b25e3c; /* deep orange-brown */
+}
+
+/* Links */
+a {
+  color: #b25e3c;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff6f3c;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  cursor: text; /* indicates editable text */
+}
+
+/* Inputs & Buttons */
+input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #b25e3c;
+  border-radius: 6px;
+  width: calc(100% - 110px);
+  margin-right: 10px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #b25e3c;
+  color: #fffaf0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff6f3c;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
-  background: #eee;
+  background-color: #ff8c42;
+  color: #fffaf0;
+  border-top: 2px solid #b25e3c;
 }

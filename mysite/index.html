@@ -3,33 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <title>Your Name - Personal Site</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Hello, I’m [Your Name]</h1>
-    <p>Welcome to my personal website.</p>
+    <h1 contenteditable="true" id="name">Hello! I’m [Your Name] 👋</h1>
+    <p contenteditable="true" id="bio">Developer, creative thinker, and lifelong learner. Welcome to my personal corner of the web!</p>
   </header>
 
   <main>
-    <section>
+    <section class="about">
       <h2>About Me</h2>
-      <p>This is where you can write a short bio about yourself.</p>
+      <p contenteditable="true" id="about">Write a short bio here. Talk about your passions, skills, or what excites you about your work.</p>
     </section>
 
-    <section>
-      <h2>Links</h2>
-      <ul>
-        <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
-        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
-        <li><a href="mailto:you@example.com">Email Me</a></li>
-      </ul>
+    <section class="projects">
+      <h2>Projects & Links</h2>
+      <ul id="projects"></ul>
+      <input type="text" id="newProject" placeholder="New project or link">
+      <button id="addProjectBtn">Add Project</button>
     </section>
+
+    <section class="updates">
+      <h2>Latest Thoughts</h2>
+      <p contenteditable="true" id="updates">Share a recent update, blog post, or idea here.</p>
+    </section>
+
+    <button id="saveBtn">Save Changes</button>
   </main>
 
   <footer>
-    <p>© 2025 My Website</p>
+    <p>© 2025 [Your Name] | Crafted with warmth ❤️</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
